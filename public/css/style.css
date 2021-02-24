@@ -1,5 +1,9 @@
 * {box-sizing:border-box}
 
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Arial, sans-serif;
+}
+
 /* Navigation Bar */
 nav {
     position: -webkit-sticky;
@@ -27,7 +31,7 @@ li a {
     text-decoration: none;
     color: white;
     font-size: 3vh;
-    font-family: Verdana, Arial;
+    font-family: Verdana, Arial, sans-serif;
 }
 
 li a:hover {
@@ -36,7 +40,7 @@ li a:hover {
 }
 
 #header {
-    font-family: Verdana, Arial;
+    font-family: Verdana, Arial, sans-serif;
     background-color: #454545;
     color: white;
     padding: 0;
@@ -46,6 +50,10 @@ li a:hover {
 
 .active {
     background-color: black;
+}
+
+#picCarouselTitle {
+    text-align: center;
 }
 
 /* slideshow container */
@@ -121,4 +129,52 @@ li a:hover {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+/* books page */
+#bookQuote {
+    text-align: center;
+}
+
+#reviewHeading {
+    text-align: center;
+}
+
+/* reviews grid */
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.author {
+    color: dimgrey;
+}
+
+/* board game page */
+
+.game-quote {
+    text-align: center;
 }
