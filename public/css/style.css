@@ -1,7 +1,11 @@
-* {box-sizing:border-box}
+* {
+    box-sizing:border-box;
+    font-family: Verdana, Arial, sans-serif
+}
 
-p, h1, h2, h3, h4, h5, h6 {
-    font-family: Verdana, Arial, sans-serif;
+p.intro {
+    margin: 0 100px 25px 100px;
+    text-align: center;
 }
 
 /* Navigation Bar */
@@ -177,4 +181,17 @@ li a:hover {
 
 .game-quote {
     text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#scrollbar {
+    height: 350px;
+    overflow: auto;
+    max-width: fit-content;
+    text-align: center;
+    margin: auto;
 }
