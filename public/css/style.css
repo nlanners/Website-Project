@@ -195,3 +195,81 @@ table, th, td {
     text-align: center;
     margin: auto;
 }
+
+/* image gallery */
+.picColumn {
+    float: left;
+    width: 10%;
+    padding: 10px;
+}
+
+.picColumn img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+}
+
+.picColumn img:hover {
+    opacity: 1;
+}
+
+.picRow:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.picsContainer {
+    position: relative;
+    display: none;
+    max-width: 70%;
+    width: max-content;
+    margin: auto;
+}
+
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#progress {
+    width: 100%;
+    background-color: grey;
+}
+
+#bar {
+    width: 33.3%;
+    height:30px;
+    background-color: skyblue;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+}
+
+#picIntro {
+    width: 50%;
+    float: left;
+}
+
+#project {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#projectIntro {
+    display: flex;
+}
+

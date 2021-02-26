@@ -53,3 +53,11 @@ function autoShowSlides() {
     slides[slideIndex-1].style.display = "block";
     setTimeout(autoShowSlides, 10000);
 }
+
+function picFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.textContent = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
