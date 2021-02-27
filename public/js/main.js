@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", setActive());
 
 function setActive() {
     if (document.getElementById("title").textContent === "Home Page") {
-        document.getElementById("home").className = "active";
+        document.getElementById("home").className += " active";
     } else if (document.getElementById("title").textContent === "Books") {
-        document.getElementById("books").className = "active";
+        document.getElementById("books").className += " active";
     } else if (document.getElementById("title").textContent === "Board Games") {
-        document.getElementById("board-games").className = "active";
+        document.getElementById("board-games").className += " active";
     } else if (document.getElementById("title").textContent === "Painting") {
-        document.getElementById("painting").className = "active";
+        document.getElementById("painting").className += " active";
     }
 }
 
